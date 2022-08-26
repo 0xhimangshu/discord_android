@@ -4,9 +4,9 @@ async def identify(self):
         "d": {
             "token": self.token,
             "properties": {
-                "$os": "Discord iOS",
-                "$browser": "Discord iOS",
-                "$device": "iOS",
+                "$os": "Discord Android",
+                "$browser": "Discord Android",
+                "$device": "Android",
                 "$referrer": "",
                 "$referring_domain": "",
             },
