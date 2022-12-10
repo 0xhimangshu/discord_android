@@ -1,6 +1,6 @@
 # discord_android
 
-## A bypass package for discord websocket identify
+<p>A bypass package for discord gatway websocket identify<p>
 
 ### install this package 
 ```
