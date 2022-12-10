@@ -11,7 +11,7 @@
     the mobile indicator is not triggered by the mobile client.
     The specific values for the $os, $browser, and $device fields are can change from time to time.<p>
 
-<h4 style="text-align:center">install this package </h1>
+<h4 style="text-align:center">install this package </h4>
 ```
  pip install discord_android
 ```
