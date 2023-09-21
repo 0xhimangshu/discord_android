@@ -15,4 +15,5 @@
 
 ```
  pip install discord_android
+ pip install git+github.com/himangshu147-git/discord_android
 ```
