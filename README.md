@@ -17,3 +17,21 @@
  pip install discord_android
  pip install git+github.com/himangshu147-git/discord_android
 ```
+
+```py
+import discord_android
+import discord
+from discord.ext import commands
+
+discord_android
+
+bot = commands.Bot(
+    intents = discord.Intents.all(),
+    command_prefix=">"
+)
+@bot.event
+async def on_ready():
+    print(f"logged in as {bot.user}")
+
+bot.run("token")
+```
