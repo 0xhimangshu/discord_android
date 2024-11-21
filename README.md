@@ -1,37 +1,38 @@
 # discord_android
 
-## bypass gatway identify
+## Description
+A Python package that allows Discord bots to appear with mobile status by bypassing the Gateway Identify process.
 
+## Features
+- Shows mobile status for your Discord bot
+- Simple integration with discord.py
+- No additional configuration needed
 
-<p>The Gateway's IDENTIFY packet contains a properties field, containing $os, $browser and $device fields.
-    Discord uses that information to know when your phone client and only your phone client has connected to Discord,
-    from there they send the extended presence object.
-    The exact field that is checked is the $browser field. If it's set to Discord Android on desktop,
-    the mobile indicator is is triggered by the desktop client. If it's set to Discord Client on mobile,
-    the mobile indicator is not triggered by the mobile client.
-    The specific values for the $os, $browser, and $device fields are can change from time to time.<p>
-
-<h4 style="text-align:center;">install this package </h4>
-
-```
- pip install discord_android
- pip install git+github.com/himangshu147-git/discord_android
+## Installation
+```bash
+pip install discord_android
 ```
 
-```py
+## Usage
+```python
 import discord_android
 import discord
 from discord.ext import commands
 
-discord_android
+# Initialize mobile status
+discord_android.init()
 
 bot = commands.Bot(
     intents = discord.Intents.all(),
-    command_prefix=">"
+    command_prefix="!"
 )
+
 @bot.event
 async def on_ready():
     print(f"logged in as {bot.user}")
 
-bot.run("token")
+bot.run("YOUR_BOT_TOKEN")
 ```
+
+## Note
+This package modifies the Discord gateway identification process to simulate a mobile client. Use responsibly and in accordance with Discord's Terms of Service.

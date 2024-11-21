@@ -1,6 +1,7 @@
-from .identify import identify
+import discord.gateway
 
-from discord.gateway import DiscordWebSocket
+from .core import DiscordWebSocket
 
-DiscordWebSocket.identify = identify
 
+def init():
+    discord.gateway.DiscordWebSocket.identify = DiscordWebSocket.identify
