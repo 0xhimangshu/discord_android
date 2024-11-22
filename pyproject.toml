@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "discord_android"
 version = "1.1.1"
 description = "A Discord.py extension to make bots appear as if they are on a mobile."
-requires-python = ">=3.8, <3.12"
+requires-python = ">=3.8, <=3.12"
 dependencies = ["discord.py"]
 authors = [
     { name = "himangshu", email = "himangshusaikia147@gmail.com" },
